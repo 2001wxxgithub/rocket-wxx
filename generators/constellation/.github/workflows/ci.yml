@@ -1,0 +1,110 @@
+name: constellation
+
+on:
+  pull_request:
+
+jobs:
+
+  docs:
+    name: "Try to compile the docs"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build docs
+        run: |
+          python3 -m pip install sphinx
+          make -C docs html
+
+  compile:
+    name: "Try to compile the project"
+    runs-on: self-hosted
+    env:
+      CONSTELLATION_STANDALONE: 1
+      JAVA_TOOL_OPTIONS: -Xmx4G -Xss8M -Dsbt.ivy.home=${{ github.workspace }}/.ivy2/ -Divy.home=${{ github.workspace }}/.ivy2/
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+    - name: Compile
+      run: |
+        mkdir -p .tools_cache
+        scripts/install-espresso.sh ${{ github.workspace }}/tools_cache
+
+        git submodule update --init --recursive
+        git clone https://github.com/chipsalliance/rocket-chip.git
+        cd rocket-chip
+        git checkout 4fbd2f238db36b2862319e94c2f96d63bd52c98b
+        git submodule update --init --recursive
+        sbt "publishLocal"
+        sbt "project cde; set publishArtifact := true; publishLocal"
+        sbt "project rocket-macros; set publishArtifact := true; publishLocal"
+        sbt "project hardfloat; set publishArtifact := true; publishLocal"
+        cd ../
+        sbt "Test / compile"
+    - name: Cache ivy directory
+      uses: actions/cache@v3
+      with:
+        path: .ivy2
+        key: constellation-ivy2-${{ github.sha }}
+    - name: Cache tools install
+      uses: actions/cache@v3
+      with:
+        path: tools_cache
+        key: constellation-tools-${{ github.sha }}
+
+  test:
+    needs: [compile]
+    name: "Run test configurations"
+    runs-on: self-hosted
+    strategy:
+      fail-fast: false
+      matrix:
+        config: [
+            "00", "01", "02", "03", "04", "05", "06", "07", "08", "09",
+            "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
+            "20", "21", "22", "23", "24", "25", "26", "27", "28", "29",
+            "30", "31", "32", "33", "34", "35", "36", "37", "38", "39",
+            "40", "41", "42", "43", "44", "45", "46", "47", "48", "49",
+            "50", "51", "52", "53", "54", "55", "56", "57", "58", "59",
+            "60", "61", "62", "63", "64", "65", "66", "67", "68", "69",
+            "70", "71", "72",
+            "TL00", "TL01", "TL02", "TL03", "TL04", "TL05",
+            "AXI400", "AXI401", "AXI402", "AXI403",
+            "Eval00", "Eval01", "Eval02", "Eval03", "Eval04",
+            "Eval05", "Eval06", "Eval07", "Eval08"
+        ]
+    env:
+      CONSTELLATION_STANDALONE: 1
+      JAVA_TOOL_OPTIONS: -Xmx4G -Xss8M -Dsbt.ivy.home=${{ github.workspace }}/.ivy2/ -Divy.home=${{ github.workspace }}/.ivy2/
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    - name: Restore ivy directory
+      uses: actions/cache@v3
+      with:
+        path: .ivy2
+        key: constellation-ivy2-${{ github.sha }}
+
+    - name: Restore tools directory
+      uses: actions/cache@v3
+      with:
+        path: tools_cache
+        key: constellation-tools-${{ github.sha }}
+
+    - name: Compile
+      run: |
+        git submodule update --init --recursive
+        make -C src/main/resources/csrc/netrace CFLAGS="-O3 -fPIC" netrace.o
+        sbt compile
+
+    - name: Unit Tests
+      run: PATH=$PATH:${{ github.workspace }}/tools_cache/bin sbt "testOnly constellation.NoCTest${{ matrix.config }}"

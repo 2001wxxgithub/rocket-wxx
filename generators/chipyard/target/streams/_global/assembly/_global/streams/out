@@ -1,0 +1,79 @@
+[0m[[0m[0mdebug[0m] [0m[0mSeparate classpath projects and all dependencies start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mSeparate classpath projects and all dependencies end. Took 7 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect only external dependencies start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect only external dependencies end. Took 1 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect excluded jar names start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect excluded jar names end. Took 0 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mFilter jars start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFilter jars end. Took 0 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect and shade project classes start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect and shade project classes end. Took 0 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect and shade dependency entries start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect and shade dependency entries end. Took 32 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect renames start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect renames end. Took 228 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mProcess renames start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mProcess renames end. Took 18 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect all merge strategies for cache check start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCollect all merge strategies for cache check end. Took 257 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mBuilding assembly jar due to missing output...[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerge all conflicting jar entries (including those renamed) start:[0m
+[0m[[0m[31merror[0m] [0m[0m5 error(s) were encountered during the merge:[0m
+[0m[[0m[0mdebug[0m] [0m[0mClose library jar references start:[0m
+[0m[[0m[0mdebug[0m] [0m[0mClose library jar references end. Took 4 ms[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: [0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceBRequest.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceBRequest.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB$$anon$1.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB$$anon$1.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/MSHR.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/MSHR.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/InclusiveCacheBankScheduler.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/InclusiveCacheBankScheduler.class[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.merge(Assembly.scala:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.$anonfun$assemble$36(Assembly.scala:330)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.timed$1(Assembly.scala:228)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.$anonfun$assemble$35(Assembly.scala:329)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.$anonfun$cachedAssembly$2(Assembly.scala:523)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.cachedAssembly(Assembly.scala:527)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.assemble(Assembly.scala:414)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbtassembly.Assembly$.$anonfun$assemblyTask$1(Assembly.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:1623)[0m
+[0m[[0m[31merror[0m] [0m[0m([31massembly[0m) [0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceBRequest.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceBRequest.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB$$anon$1.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB$$anon$1.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/MSHR.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/MSHR.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/SourceB.class[0m
+[0m[[0m[31merror[0m] [0m[0mDeduplicate found different file contents in the following:[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = rocketchip-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/InclusiveCacheBankScheduler.class[0m
+[0m[[0m[31merror[0m] [0m[0m  Jar name = sifive_cache-1.6.jar, jar org = edu.berkeley.cs, entry target = sifive/blocks/inclusivecache/InclusiveCacheBankScheduler.class[0m

@@ -1,0 +1,576 @@
+    1  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    2  plugins=(git zsh-syntax-highlighting)
+    3  vim .zshrc
+    4  soucre ./.zshrc
+    5  source ./.zshrc
+    6  mkdir ~/.oh-my-zsh/plugins/incr
+    7  wget http://mimosa-pudica.net/src/incr-0.2.zsh -O ~/.oh-my-zsh/plugins/incr/incr.plugin.zsh
+    8  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    9  sudo apt install autojump
+   10  vim .zshrc
+   11  source ./.zshrc
+   12  ls
+   13  clear
+   14  ls
+   15  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"  
+   16  wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"  
+   17  ping github.com
+   18  wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"  
+   19  ls
+   20  bash Miniforge3-$(uname)-$(uname -m).sh 
+   21  git --version 
+   22  conda install -n base conda-libmamba-solver
+   23  ls
+   24  cd miniforge3/
+   25  ls
+   26  cd ../
+   27  vim /home/rain2/.zshrc 
+   28  vim /home/rain2/.bashrc  
+   29  source ./.zshrc
+   30  vim /home/rain2/.bashrc  
+   31  conda install -n base conda-libmamba-solver
+   32  conda config --set solver libmamba
+   33  conda install -n base conda-lock==1.4.0
+   34  conda env list
+   35  conda env
+   36  env
+   37  clear
+   38  ls
+   39  mkdir lean 
+   40  ls
+   41  cd lean/
+   42  git clone https://github.com/ucb-bar/chipyard.git 
+   43  cd chipyard/
+   44  git checkout v1.10.0
+   45  git checkout 1.10.0
+   46  ./build-setup.sh riscv-tools 
+   47  ls
+   48  source ./env.sh 
+   49  ls
+   50  cd sims/verilator/
+   51  ls
+   52  cd lean/
+   53  ls
+   54  mkdir test
+   55  cd test/
+   56  ls
+   57  vim hello.c
+   58  cd ../
+   59  conda env list 
+   60  conda activate /home/rain2/lean/chipyard/.conda-env/
+   61  conda env list
+   62  cd chipyard/
+   63  source ./env.sh 
+   64  cd lean/chipyard/
+   65  source ./env.sh 
+   66  cd .
+   67  cd ../
+   68  clear
+   69  ls
+   70  cd test/
+   71  riscv64-unknown-elf-gcc -static -specs=htif_nano.specs hello.o -o hello.riscv 
+   72  make run-binary CONFIG=RocketConfig BINARY=~/lean/test/hello.riscv
+   73  clear
+   74  conda activate /home/rain2/lean/chipyard/.conda-env/
+   75  cd chipyard/
+   76  cd lean/chipyard/
+   77  source ./env.sh 
+   78  cd sims/verilator/
+   79  make run-binary CONFIG=RocketConfig BINARY=~/lean/test/hello.riscv
+   80  cd lean/chipyard/
+   81  source ./env.sh 
+   82  cd sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+   83  ll
+   84  make run-binary CONFIG=RocketConfig BINARY=~/lean/test/hello.riscv
+   85  clear
+   86  ls
+   87  cd lean/test/
+   88  l
+   89  vim l2miss_gen.c
+   90  riscv64-unknown-elf-gcc -fno-common -fno-builtin-printf -specs=htif_nano.specs -c l2miss_gen.c 
+   91  cd ../chipyard/
+   92  source ./env.sh 
+   93  cd ../test/
+   94  riscv64-unknown-elf-gcc -fno-common -fno-builtin-printf -specs=htif_nano.specs -c l2miss_gen.c 
+   95  riscv64-unknown-elf-gcc -static -specs=htif_nano.specs l2miss_gen.o  -o l2miss_gen.riscv  
+   96  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+   97  ll
+   98  vim l2miss_gen.c
+   99  ll
+  100  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  101  ls
+  102  gtkwave l2miss_gen.vcd 
+  103  vim l2miss_gen.out 
+  104  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  105  gtkwave l2miss_gen.vcd 
+  106  cd lean/chipyard/
+  107  source ./env.sh 
+  108  cd sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  109  gtkwave l2miss_gen.vcd 
+  110  cd chipyard/
+  111  cd lean/chipyard/
+  112  source ./env.sh 
+  113  cd sims/verilator/
+  114  ls
+  115  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  116  ll
+  117  vim l2miss_gen.out 
+  118  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  119  ll
+  120  clear
+  121  ll
+  122  w
+  123  ll
+  124  tail 10 l2miss_gen.out 
+  125  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  126  ll
+  127  clear
+  128  cd lean/chipyard/
+  129  source ./env.sh 
+  130  cd sims/verilator/
+  131  gtkwave l2miss_gen.vcd 
+  132  ll
+  133  vim l2miss_gen.out 
+  134  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  135  gtkwave l2miss_gen.vcd 
+  136  ll
+  137  vim l2miss_gen.out 
+  138  gtkwave l2miss_gen.vcd 
+  139  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  140  ll
+  141  vim l2miss_gen.out 
+  142  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  143  l
+  144  gtkwave l2miss_gen.vcd 
+  145  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  146  ll
+  147  vim l2miss_gen.out 
+  148  ls
+  149  vim l2miss_gen.out 
+  150  gtkwave l2miss_gen.vcd 
+  151  ll
+  152  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  153  ll
+  154  gtkwave l2miss_gen.vcd 
+  155  ll
+  156  gtkwave l2miss_gen.vcd 
+  157  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  158  ll
+  159  vim l2miss_gen.out 
+  160  ll
+  161  vim l2miss_gen.out 
+  162  ll
+  163  vim l2miss_gen.out 
+  164  ll
+  165  vim l2miss_gen.out 
+  166  gtkwave l2miss_gen.vcd 
+  167  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  168  ll
+  169  vim l2miss_gen
+  170  vim l2miss_gen.out 
+  171  ll
+  172  vim l2miss_gen.out 
+  173  gtkwave l2miss_gen.vcd 
+  174  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  175  vim l2miss_gen.out 
+  176  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  177  ll
+  178  vim l2miss_gen.out 
+  179  ll
+  180  vim l2miss_gen.out 
+  181  gtkwave l2miss_gen.vcd 
+  182  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  183  ll
+  184  gtkwave l2miss_gen.vcd 
+  185  ll
+  186  vim l2miss_gen.out 
+  187  gtkwave l2miss_gen.vcd 
+  188  ls
+  189  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  190  ll 
+  191  l
+  192  ll 
+  193  clear
+  194  lll 
+  195  clear
+  196  ll 
+  197  gtkwave l2miss_gen.vcd 
+  198  ll 
+  199  gtkwave l2miss_gen_rfout.vcd 
+  200  gtkwave l2miss_gen.vcd 
+  201  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  202  clear
+  203  ll 
+  204  vim l2miss_gen.out 
+  205  ll 
+  206  clear
+  207  cd lean/chipyard/
+  208  source ./env.sh 
+  209  git status 
+  210  git add 
+  211  git add .
+  212  git commit -m "add checkpoint"
+  213  git config --global user.email andeyou2021@163.com
+  214  git config --global user.name rain 
+  215  git commit -m "add checkpoint"
+  216  git add .
+  217  git commit -m "add checkpoint"
+  218  git commit -am "add checkpoint"
+  219  git commit -a -m "add checkpoint"
+  220  git add . 
+  221  git commit -a -m "add checkpoint"
+  222  git checkout -b rain_runahead 
+  223  ll
+  224  git status 
+  225  cd generators/rocket-chip/
+  226  git add . 
+  227  git commit -a -m "add checkpoint"
+  228  cd ../../
+  229  git add generators/rocket-chip/
+  230  git commit -m "add checkpoint"
+  231  git remote 
+  232  git remote -v 
+  233  git remote rm origin  
+  234  git remote add git@github.com:Derain123/chipyard-rh.git 
+  235  git remote add origin git@github.com:Derain123/chipyard-rh.git 
+  236  git remote show  
+  237  git remote -v 
+  238  git push -u origin rain_runahead   
+  239  ll
+  240  clear
+  241  ll 
+  242  ssh-keygen -t rsa -b 4096 -C "andeyou2021@163.com"  
+  243  ls
+  244  ll 
+  245  l
+  246  cd .ssh/
+  247  ls
+  248  cat id_rsa
+  249  cat id_rsa.pub 
+  250  ssh -T git@github.com
+  251  cd ../
+  252  git push -u origin rain_runahead   
+  253  ls
+  254  git status 
+  255  git log 
+  256  cd sims/verilator/
+  257  clear
+  258  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  259  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  260  vim l2miss_gen.out 
+  261  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  262  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  263  gtkwave l2miss_gen.vcd 
+  264  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  265  ls
+  266  cd ~/lean/test/
+  267  ll
+  268  riscv64-unknown-elf-objdump l2miss_gen.riscv 
+  269  riscv64-unknown-elf-objdump l2miss_gen.riscv | less
+  270  clear
+  271  riscv64-unknown-elf-objdump -d l2miss_gen.riscv | less
+  272  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  273  gtkwave l2miss_gen.vcd 
+  274  w
+  275  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  276  ll 
+  277  gtkwave l2miss_gen_0412tilelink.gtkw  
+  278  clear
+  279  cd lean/chipyard/
+  280  source ./env.sh 
+  281  cd sims/verilator/
+  282  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  283  gtkwave l2miss_gen.vcd 
+  284  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  285  ll 
+  286  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  287  gtkwave l2miss_gen_0412tilelink.gtkw  
+  288  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  289  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  290  gtkwave l2miss_gen_ckpoint.gtkw 
+  291  cd lean/chipyard/
+  292  source ./env.sh 
+  293  cd sims/verilator/
+  294  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  295  gtkwave l2miss_gen.vcd 
+  296  gtkwave l2miss_gen_ckpoint.gtkw 
+  297  gtkwave l2miss_gen.vcd 
+  298  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  299  gtkwave l2miss_gen.vcd 
+  300  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  301  gtkwave l2miss_gen.vcd 
+  302  cd ../
+  303  cd generators/rocket-chip/
+  304  git remote -v 
+  305  ls
+  306  cd lean/chipyard/
+  307  cd ../
+  308  cd test/
+  309  cd ../
+  310  cp test/ chipyard/generators/rocket-chip/
+  311  cp /test chipyard/generators/rocket-chip/
+  312  cp ./test/ chipyard/generators/rocket-chip/
+  313  cp ./test  chipyard/generators/rocket-chip/
+  314  mv ./test/ chipyard/generators/rocket-chip/
+  315  ll 
+  316  cd chipyard/generators/rocket-chip/\n: 1712933320:0;cd chipyard/generators/rocket-chip/
+  317  ll 
+  318  git remote remove 
+  319  git remote remove .
+  320  git remote -v 
+  321  git remote remove https://github.com/chipsalliance/rocket-chip.git
+  322  git remote remove origin 
+  323  clear
+  324  git remote add git@github.com:Derain123/rocket-chip-rh.git  
+  325  git remote -v  
+  326  git remote add origin git@github.com:Derain123/rocket-chip-rh.git  
+  327  git remote -v  
+  328  git add . 
+  329  git commit -m "add checkpoint rocket"
+  330  git status 
+  331  git branch 
+  332  git push -u origin master 
+  333  ll
+  334  ll\n: 1712933320:0;cd chipyard/generators/rocket-chip/
+  335  cd src/main/scala/
+  336  ls
+  337  cd rocket/
+  338  ls
+  339  git add . 
+  340  git commit -m "add checkpoint-2"
+  341  git status 
+  342  git log 
+  343  cd ../
+  344  ll
+  345  git status 
+  346  git add . 
+  347  git add test 
+  348  git status 
+  349  git add ./test
+  350  git commit -m "add checkpoint-2"
+  351  git push -u origin master 
+  352  git branch r_runahead
+  353  git switch r_runahead 
+  354  git add ./test
+  355  git commit -m "add checkpoint-2"
+  356  git push -u origin rain_runahead   
+  357  git push -u origin r_runahead 
+  358  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  359  gtkwave l2miss_gen_0412tilelink.gtkw  
+  360  ls
+  361  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  362  gtkwave l2miss_gen_0412tilelink.gtkw  
+  363  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  364  gtkwave l2miss_gen_0412tilelink.gtkw  
+  365  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  366  gtkwave l2miss_gen_0412tilelink.gtkw  
+  367  clear
+  368  cd lean/chipyard/
+  369  source ./env.sh 
+  370  cd sims/verilator/
+  371  make run-binary-debug CONFIG=RocketConfig BINARY=~/lean/test/l2miss_gen.riscv
+  372  make run-binary-debug CONFIG=RocketConfig BINARY=../../generator/rocket-chip/lean/test/l2miss_gen.riscv
+  373  make run-binary-debug CONFIG=RocketConfig BINARY=../../generator/rocket-chip/test/l2miss_gen.riscv
+  374  cd chipyard/generators/rocket-chip/\n: 1712933320:0;cd chipyard/generators/rocket-chip/
+  375  cd lean/chipyard/generators/rocket-chip/\n: 1712933320:0;cd chipyard/generators/rocket-chip/
+  376  ls
+  377  cd test/
+  378  ls
+  379  pwd
+  380  gtkwave l2miss_gen.vcd 
+  381  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  382  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  383  gtkwave l2miss_gen.vcd 
+  384  cd lean/chipyard/generators/rocket-chip/\n: 1712933320:0;cd chipyard/generators/rocket-chip/
+  385  cd -1 \n: 1712933320:0;cd chipyard/generators/rocket-chip/
+  386  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  387  gtkwave l2miss_gen.vcd 
+  388  cd lean/chipyard/
+  389  source ./env.sh 
+  390  cd sims/verilator/
+  391  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  392  ll 
+  393  cd lean/chipyard/
+  394  source ./env.sh 
+  395  clear
+  396  cd sims/verilator/
+  397  cd output/chipyard.harness.TestHarness.RocketConfig/
+  398  ll
+  399  gtkwave l2miss_gen_0412tilelink.gtkw  
+  400  cd output/chipyard.harness.TestHarness.RocketConfig/
+  401  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  402  ll 
+  403  gtkwave l2miss_gen_0412tilelink.gtkw  
+  404  cd ../..\n: 1713256327:0;cd ../../
+  405  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  406  ll 
+  407  gtkwave l2miss_gen.vcd 
+  408  cd output/chipyard.harness.TestHarness.RocketConfig/
+  409  vim l2miss_gen.out 
+  410  ll cd ../../
+  411  cd ../
+  412  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  413  gtkwave l2miss_gen.vcd 
+  414  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  415  gtkwave l2miss_gen.vcd 
+  416  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  417  cd chipyard
+  418  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  419  ll 
+  420  gtkwave l2miss_gen.vcd 
+  421  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  422  gtkwave l2miss_gen.vcd 
+  423  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  424  gtkwave l2miss_gen.vcd 
+  425  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  426  gtkwave l2miss_gen.vcd 
+  427  gtkwave l2miss_gen_dbitshit.gtkw 
+  428  cd ../
+  429  cd generators/rocket-chip/
+  430  git status 
+  431  ll
+  432  clear
+  433  cd lean/chipyard/
+  434  source ./env.sh 
+  435  cd sims/verilator/
+  436  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  437  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  438  cd ../../
+  439  cd generated-src/
+  440  cd chipyard.harness.TestHarness.RocketConfig/
+  441  cd ~
+  442  ll 
+  443  cd lean/
+  444  ll 
+  445  wget ^[[200~ 
+  446  wget https://www.yworks.com/products/yed/download#download 
+  447  firefox 
+  448  wget https://www.yworks.com/resources/yed/demo/yEd-3.23.2_with-JRE20_64-bit_setup.sh 
+  449  ls
+  450  vim yEd-3.23.2_with-JRE20_64-bit_setup.sh 
+  451  chmod +x yEd-3.23.2_with-JRE20_64-bit_setup.sh  
+  452  ./yEd-3.23.2_with-JRE20_64-bit_setup.sh 
+  453  cd sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  454  cd chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  455  gtkwave l2miss_gen.vcd 
+  456  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  457  gtkwave l2miss_gen.vcd 
+  458  yed
+  459  yEd
+  460  ls
+  461  cd lean/
+  462  ls
+  463  cd yEd/
+  464  ls
+  465  yEd
+  466  cd yEd/
+  467  ls
+  468  ./yEd
+  469  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  470  ll 
+  471  gtkwave l2miss_gen.vcd 
+  472  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  473  ls
+  474  cd lean/
+  475  ll 
+  476  cd yEd/
+  477  LS
+  478  ls
+  479  ./yEd
+  480  ll 
+  481  gtkwave l2miss_gen_dbitshit.gtkw 
+  482  gtkwave l2miss_gen_dbitshit2.gtkw  
+  483  gtkwave l2miss_gen.vcd 
+  484  clear
+  485  cd lean/chipyard/
+  486  source ./env.sh 
+  487  cd sims/verilator/
+  488  make --help
+  489  make -help
+  490  make help
+  491  history
+  492  make verilog CONFIG=RocketConfig
+  493  make help
+  494  make clean
+  495  make verilog CONFIG=RocketConfig
+  496  make clean
+  497  make verilog CONFIG=RocketConfig | tee make.log 
+  498  clear
+  499  cd lean/chipyard/sims/verilator/
+  500  ll 
+  501  vim make.log 
+  502  gtkwave l2miss_gen.vcd 
+  503  gtkwave l2miss_gen_hitandcachegrant.gtkw 
+  504  clear
+  505  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  506  gtkwave l2miss_gen_hitandcachegrant2.gtkw  
+  507  ls
+  508  cd lean/
+  509  cd yEd/
+  510  ./yEd-3.23.2_with-JRE20_64-bit_setup.sh 
+  511  ./yEd
+  512  cd lean/yEd/
+  513  ./yEd
+  514  gtkwave l2miss_gen_hitandcachegrant2.gtkw  
+  515  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  516  gtkwave l2miss_gen_hitandcachegrant2.gtkw  
+  517  clear
+  518  cd lean/chipyard/
+  519  source ./env.sh 
+  520  cd sims/verilator/
+  521  make clean
+  522  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  523  clear
+  524  ls
+  525  cd lean/chipyard/
+  526  source ./env.sh 
+  527  cd sims/verilator/
+  528  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  529  ls
+  530  cd lean/chipyard/
+  531  ls
+  532  cd sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  533  gtkwave l2miss_gen_hitandcachegrant2.gtkw  
+  534  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv
+  535  make clean
+  536  cd lean/chipyard/
+  537  source ./env.sh 
+  538  ls
+  539  clear
+  540  cd sims/verilator/
+  541  make clean
+  542  make verilog CONFIG=RocketConfig | tee make.log 
+  543  ll
+  544  vim make.log 
+  545  make firrtl CONFIG=RocketConfig | tee make.log 
+  546  make verilog CONFIG=RocketConfig | tee make.log 
+  547  cd lean/chipyard/sims/verilator/output/chipyard.harness.TestHarness.RocketConfig/
+  548  ll 
+  549  gtkwave l2miss_gen_hitandcachegrant2.gtkw  
+  550  ls
+  551  cd lean/chipyard/
+  552  ls
+  553  cd ../
+  554  l
+  555  cd yEd/
+  556  ./yEd
+  557  clear
+  558  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv | tee make.log
+  559  cd lean/chipyard/
+  560  source ./env.sh 
+  561  cd sims/verilator/
+  562  make run-binary-debug CONFIG=RocketConfig BINARY=/home/rain2/lean/chipyard/generators/rocket-chip/test/l2miss_gen.riscv | tee make.log
+  563  clear
+  564  ls
+  565  cd lean/chipyard/
+  566  source ./env.sh 
+  567  ls
+  568  clear
+  569  cd generators/
+  570  cd rocket/
+  571  cd rocket-chip/
+  572  ls
+  573  clear
+  574  history
+  575  history | less
+  576  history | tail 

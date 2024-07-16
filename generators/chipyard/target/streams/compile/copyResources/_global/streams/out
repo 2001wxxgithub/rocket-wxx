@@ -1,0 +1,10 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/vsrc/GCDMMIOBlackBox.v,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/GCDMMIOBlackBox.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/vsrc/ClockDividerN.sv,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/ClockDividerN.sv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/vsrc/cospike.v,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/cospike.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/vsrc/spiketile.v,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/spiketile.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/csrc/spiketile_dtm.h,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/spiketile_dtm.h)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/csrc/cospike.cc,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/cospike.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/csrc/spiketile_tsi.h,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/spiketile_tsi.h)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/csrc/cospike_dtm.h,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/cospike_dtm.h)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/chipyard/src/main/resources/csrc/spiketile.cc,/home/wxx/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/spiketile.cc)[0m
