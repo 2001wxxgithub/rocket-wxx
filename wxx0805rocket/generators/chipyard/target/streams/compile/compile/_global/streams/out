@@ -1,0 +1,35 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/SpikeTile.scala:132:53: method hartId in trait HasNonDiplomaticTileParameters is deprecated (since rocket-chip 1.3): use hartIdSinkNodeOpt.map(_.bundle) or staticIdForMetadataUseOnly[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Resource(cpuDevice, "reg").bind(ResourceAddress(hartId))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/SpikeTile.scala:340:40: method hartId in trait HasNonDiplomaticTileParameters is deprecated (since rocket-chip 1.3): use hartIdSinkNodeOpt.map(_.bundle) or staticIdForMetadataUseOnly[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val spike = Module(new SpikeBlackBox(hartId, isaDTS, tileParams.core.nPMPs,[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/SpikeTile.scala:474:16: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val prev = up(TilesLocated(InSubsystem), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/config/fragments/PeripheralFragments.scala:25:29: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case BootROMLocated(x) => up(BootROMLocated(x), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/config/fragments/PeripheralFragments.scala:31:29: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case L2hitLocated(x) => up(L2hitLocated(x), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/config/fragments/PeripheralFragments.scala:66:23: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case ExportDebug => up(ExportDebug, site).copy(protocols = Set(DMI))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/config/fragments/PeripheralFragments.scala:75:20: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case ExtTLMem => up(ExtMem, site) // enable TL backing memory[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/config/fragments/PeripheralFragments.scala:79:18: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case ExtMem => up(ExtMem, site).map(x => x.copy(master = x.master.copy(idBits = n)))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/example/TutorialTile.scala:138:53: method hartId in trait HasNonDiplomaticTileParameters is deprecated (since rocket-chip 1.3): use hartIdSinkNodeOpt.map(_.bundle) or staticIdForMetadataUseOnly[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Resource(cpuDevice, "reg").bind(ResourceAddress(hartId))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/example/TutorialTile.scala:234:16: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val prev = up(TilesLocated(InSubsystem), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/chipyard/src/main/scala/example/TutorialTile.scala:245:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case SystemBusKey => up(SystemBusKey, site).copy(beatBytes = 8)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m183 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m12 warnings found[0m

@@ -1,0 +1,61 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:79:95: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method globalName,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m      TSIBridge(th.harnessBinderClock, ram.module.io.tsi, p(ExtMem).map(_ => MainMemoryConsts.globalName), th.harnessBinderReset.asBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:131:103: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method globalName,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        TSIBridge(th.harnessBinderClock, harnessMultiClockAXIRAM.module.io.tsi, Some(MainMemoryConsts.globalName), th.harnessBinderReset.asBool)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:143:51: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method globalName,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            Some(MainMemoryConsts.globalName)))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:166:48: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method globalName,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         Some(MainMemoryConsts.globalName)))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:81:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:89:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:100:94: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ports.map { p => UARTBridge(uartSyncClock, p, th.harnessBinderReset.asBool)(system.p) }; Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:107:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:150:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:170:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:177:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:183:87: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ports.map { p => p.traces.map(tileTrace => DromajoBridge(tileTrace)(system.p)) }; Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:189:78: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ports.map { p => GroundTestBridge(th.harnessBinderClock, p)(system.p) }; Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:37:5: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    up(BootROMLocated(x), site).map(_.copy(contentFileName = bootROMPath))[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:43:26: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case DebugModuleKey => up(DebugModuleKey, site).map(_.copy(clockGate = false))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:44:34: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case ChipyardPRCIControlKey => up(ChipyardPRCIControlKey, site).copy(enableTileClockGating = false)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wxx/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:55:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case TracePortKey => up(TracePortKey, site).map(_.copy(print = true))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m18 warnings found[0m
