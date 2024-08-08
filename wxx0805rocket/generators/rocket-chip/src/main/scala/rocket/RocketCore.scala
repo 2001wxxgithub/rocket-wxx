@@ -583,7 +583,7 @@ class Rocket(tile: RocketTile)(implicit p: Parameters) extends CoreModule()(p)
   div.io.req.bits.in1 := ex_rs(0)
   div.io.req.bits.in2 := ex_rs(1)
   div.io.req.bits.tag := ex_waddr
-  div.io.kill := db_flag                    //wxx-runahead   退出rh时把未完成的乘除kill掉
+  div.io.kill := killm_common && RegNext(div.io.req.fire) || db_flag   //wxx                   //wxx-runahead   退出rh时把未完成的乘除kill掉
   val mul = pipelinedMul.option {
     val m = Module(new PipelinedMultiplier(xLen, 2, aluFn = aluFn))
     m.io.req.valid := ex_reg_valid && ex_ctrl.mul && !ex_longinst_kill   //wxx-runahead防止再次运算长指令调用  && !ex_longinst_kill 
