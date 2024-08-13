@@ -1,0 +1,125 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Jul 31 08:44:20 2024
+[*]
+[dumpfile] "/home/rain/citeseer_m4_5_7.fst"
+[dumpfile_mtime] "Wed Jul 31 07:45:18 2024"
+[dumpfile_size] 74438542
+[savefile] "/home/rain/citeseer_m4_5_7.gtkw"
+[timestart] 958345310
+[size] 2560 1403
+[pos] 2477 -110
+*-14.000000 958395520 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.TestDriver.
+[treeopen] TOP.TestDriver.testHarness.
+[treeopen] TOP.TestDriver.testHarness.chiptop0.
+[treeopen] TOP.TestDriver.testHarness.chiptop0.system.
+[treeopen] TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.
+[treeopen] TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.
+[treeopen] TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.
+[treeopen] TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.dcache.
+[sst_width] 315
+[signals_width] 348
+[sst_expanded] 1
+[sst_vpaned_height] 423
+@28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.clock
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ibuf.io_pc[39:0]
+@28
+[color] 3
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ctrl_killd
+[color] 3
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ctrl_stalld
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.dcache_blocked_blocked
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_perf_acquire
+@29
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_perf_grant
+@28
+[color] 3
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_ready
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.dcache.metaReadArb.io_in_4_ready
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.dcache.readArb.io_in_3_ready
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_s2_nack
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_mshr_state_0[3:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_mshr_state_1[3:0]
+@28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_perf_grant
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ibuf.io_inst_0_valid
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ibuf.io_inst_0_bits_replay
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.take_pc_mem_wb
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ibuf.io_imem_bits_pc[39:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.ex_reg_pc[39:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.mem_reg_pc[39:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_pc[39:0]
+@28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.wb_valid
+@24
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.rf_ext.Memory[16][63:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.rf_ext.Memory[17][63:0]
+@28
+[color] 3
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.runahead_posedge
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.runahead_flag
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.runahead_tag[6:0]
+@28
+[color] 3
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.db_flag
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_valid
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_req_bits_addr[39:0]
+@28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.io_dmem_resp_valid
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.dcache.io_cpu_resp_bits_addr[39:0]
+@28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.id_sboard_hazard
+@22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.id_raddr1[4:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.id_raddr2[4:0]
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.id_waddr[4:0]
+@28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.rcu.io_sb_in_15
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.id_rfinvfile_propogation
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_0
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_1
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_2
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_3
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_4
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_5
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_6
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_7
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_8
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_9
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_10
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_11
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_12
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_13
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_14
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_15
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_16
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_17
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_18
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_19
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_20
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_21
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_22
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_23
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_24
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_25
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_26
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_27
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_28
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_29
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.invfile_30
+[pattern_trace] 1
+[pattern_trace] 0
+!100000@@
+?"80000436
+@23
+TOP.TestDriver.testHarness.chiptop0.system.tile_prci_domain.tile_reset_domain_tile.core.wb_reg_pc[39:0]
+!!
