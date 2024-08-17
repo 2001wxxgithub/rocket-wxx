@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/TestDriver.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/TestDriver.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/RoccBlackBox.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/RoccBlackBox.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/ClockDivider2.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/ClockDivider2.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/ClockDivider3.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/ClockDivider3.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/EICG_wrapper.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/EICG_wrapper.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/SimDTM.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/SimDTM.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/debug_rob.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/debug_rob.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/SimJTAG.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/SimJTAG.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/plusarg_reader.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/plusarg_reader.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/vsrc/AsyncResetReg.v,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/vsrc/AsyncResetReg.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/debug_rob.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/debug_rob.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/verilator.h,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/verilator.h)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/float_fix.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/float_fix.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/SimDTM.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/SimDTM.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/SimJTAG.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/SimJTAG.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/emulator.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/emulator.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/comlog.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/comlog.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/remote_bitbang.h,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/remote_bitbang.h)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/csrc/remote_bitbang.cc,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/csrc/remote_bitbang.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wxx/chipyard/generators/rocket-chip/src/main/resources/META-INF/services/firrtl.options.RegisteredLibrary,/home/wxx/chipyard/generators/rocket-chip/src/target/scala-2.13/classes/META-INF/services/firrtl.options.RegisteredLibrary)[0m
